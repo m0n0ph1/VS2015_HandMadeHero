@@ -1,8 +1,6 @@
-
-Day 002 - Opening a Win32 Window
-==============================================
-Day 002 of [HandMade Hero](https://handmadehero.org/)
-[Opening a Win32 Window](https://www.youtube.com/watch?v=4ROiWonnWGk)
+Opening a Win32 Window
+======================
+Day 002 [Opening a Win32 Window](https://www.youtube.com/watch?v=4ROiWonnWGk)
 
 1. Review of setting up a development environment
 2. WNDCLASS struct
@@ -17,6 +15,3 @@ Day 002 of [HandMade Hero](https://handmadehero.org/)
 11. BeginPaint function
 12. PatBlt function
 13. Epilepsy window
-
-Youtube Link:
-https://www.youtube.com/watch?v=4ROiWonnWGk
