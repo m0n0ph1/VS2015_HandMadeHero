@@ -1,9 +1,7 @@
 Setting Up the Windows Build
 ============================
 
-Day 001 of coding on [Handmade Hero](http://handmadehero.org)
-
-Setting Up the Windows Build
+Day 001 [Setting Up the Windows Build](https://www.youtube.com/watch?v=Ee3EtYb8d1o)
 
 1. Review of C on Windows
 2. Command subst. subst w: c:/hmh
@@ -11,5 +9,3 @@ Setting Up the Windows Build
 4. Navigating windows shell
 5. Setting up minimal build system.
 6. Windows MessageBox
-
-[Youtube Link](https://www.youtube.com/watch?v=Ee3EtYb8d1o)
