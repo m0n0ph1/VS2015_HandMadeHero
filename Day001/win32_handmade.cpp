@@ -4,7 +4,7 @@
 
 /*
 	Original Code by:	Casey Muratori
-	Website:		https://handmadehero.org
+	Website:			https://handmadehero.org
 	
 	Tutorial ID:		Handmade Hero Day 001
 	Tutorial Title:		Setting Up the Windows Build
@@ -14,21 +14,21 @@
 	Source Files:		win32_handmade.cpp
 
 	Modified by:		Mieleke
-	Github:			https://github.com/mieleke
+	Github:				https://github.com/mieleke
 	
-	About:			Many people have problems compiling the HandMade Hero Tutorials in 
-				Visual Studio Community 2015, so im creating a repository to work with just that. 
+	About:				Many people have problems compiling the HandMade Hero Tutorials in 
+						Visual Studio Community 2015, so im creating a repository to work with just that. 
 						
-				The source code is also extra commented to clarify what's happening.
-				Personally I prefer the variable name conventions based on MSDN instead of the 
-				altered ones Casey uses in the original examples.
+						The source code is also extra commented to clarify what's happening.
+						Personally I prefer the variable name conventions based on MSDN instead of the 
+						altered ones Casey uses in the original examples.
 						
-				In addition, the formatting of the source code differences according to my own style.
+						In addition, the formatting of the source code differences according to my own style.
 
 
-	NOTE:			For questions about this please use PM on Github: https://github.com/mieleke, 
-				and do not ask Casey Muratori questions about this source code, as he is busy 
-				enough with this project.
+	NOTE:				For questions about this please use PM on Github: https://github.com/mieleke, 
+						and do not ask Casey Muratori questions about this source code, as he is busy 
+						enough with this project.
 */
 
 #include <windows.h>
