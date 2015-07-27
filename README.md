@@ -1,4 +1,4 @@
-VS_HandMade
+VS2015_HandMadeHero
 ============
 This repository for [Handmade Hero](http://handmadehero.org/) is created to compile under [Visual Studio Community 2015] (https://www.visualstudio.com/).
 
