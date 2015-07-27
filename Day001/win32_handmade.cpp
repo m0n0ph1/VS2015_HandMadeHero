@@ -33,11 +33,27 @@
 
 #include <windows.h>
 
+/*
+	WinMain entry point - https://msdn.microsoft.com/en-us/library/windows/desktop/ms633559(v=vs.85).aspx
+
+	The user-provided entry point for a graphical Windows-based application.
+	WinMain is the conventional name used for the application entry point. 
+
+	SYNTAX:			int CALLBACK WinMain	(	_In_ HINSTANCE hInstance,
+								_In_ HINSTANCE hPrevInstance,
+								_In_ LPSTR     lpCmdLine,
+								_In_ int       nCmdShow	);
+
+	RETURN VALUE:	int
+	
+	If the function succeeds, terminating when it receives a WM_QUIT message, 
+	it should return the exit value contained in that message's wParam parameter.
+	If the function terminates before entering the message loop, it should return zero.
+*/
+
 int CALLBACK WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine,int nCmdShow)
 {
-    MessageBoxA(0, "This is Handmade Hero.", "Handmade Hero",
-                MB_OK|MB_ICONINFORMATION);
-    
+    MessageBoxA(0, "This is Handmade Hero.", "Handmade Hero",MB_OK|MB_ICONINFORMATION);
     return(0);
 }
 
