@@ -1,4 +1,5 @@
-#Day001 - Setting Up the Windows Build
+Setting Up the Windows Build
+============================
 
 Day 001 of coding on [Handmade Hero](http://handmadehero.org)
 
