@@ -15,8 +15,5 @@ Do not ask Casey questions about this source code, as he is busy enough with thi
 
 Copyright & Author
 ------------------------------
-
 [Casey Muratori](http://mollyrocket.com/casey/about.html) is the author of Handmade Hero, this code is created by
-following the tutorials on [Youtube](https://www.youtube.com/user/handmadeheroarchive).
-
-You can order the source code [here](https://handmadehero.org/).
+following the tutorials on [Youtube](https://www.youtube.com/user/handmadeheroarchive), the complete source code is available from [here](https://handmadehero.org/) for about $15.
