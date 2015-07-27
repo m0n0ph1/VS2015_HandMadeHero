@@ -1,6 +1,6 @@
-#HandMade Hero - Day001
+#Day001 - Setting Up the Windows Build
 
-Day 001 of coding on Handmade Hero. 
+Day 001 of coding on Handmade Hero - Setting Up the Windows Build
 See http://handmadehero.org for details.
 
 1. Review of C on Windows
