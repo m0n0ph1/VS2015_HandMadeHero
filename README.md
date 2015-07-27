@@ -1,5 +1,6 @@
-#About This Repository
-Handmade Hero is an ongoing project to create a complete, professional-quality game accompanied by videos that explain every single line of its source code.
+VS_HandMade
+============
+This repository for [Handmade Hero](http://handmadehero.org/) is created to compile under [Visual Studio Community 2015] (https://www.visualstudio.com/).
 
 Many people have problems compiling the HandMade Hero Tutorials in Visual Studio Community 2015, so im creating a repository to work with just that. 
 						
@@ -7,8 +8,15 @@ The source code is also extra commented to clarify what's happening. Personally 
 
 In addition, the formatting of the source code differences according to my own style.
 
-#For Questions
-For questions about this please use Github:
-https://github.com/mieleke
+Questions
+------------------------------
+For questions about this please use [Github](https://github.com/mieleke)
+Do not ask Casey questions about this source code, as he is busy enough with this project.
 
-Do not ask Casey Muratori questions about this source code, as he is busy enough with this project.
+Copyright & Author
+------------------------------
+
+[Casey Muratori](http://mollyrocket.com/casey/about.html) is the author of Handmade Hero, this code is created by
+following the tutorials on [Youtube](https://www.youtube.com/user/handmadeheroarchive).
+
+You can order the source code [here](https://handmadehero.org/).
