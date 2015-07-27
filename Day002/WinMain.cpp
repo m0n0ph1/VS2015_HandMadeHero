@@ -4,7 +4,7 @@
 
 /*
 	Original Code by:	Casey Muratori
-	Website:			https://handmadehero.org
+	Website:		https://handmadehero.org
 	
 	Tutorial ID:		Handmade Hero Day 002
 	Tutorial Title:		Opening a Win32 Window
@@ -14,21 +14,21 @@
 	Source Files:		WinMain.cpp
 
 	Modified by:		Mieleke
-	Github:				https://github.com/mieleke
+	Github:			https://github.com/mieleke
 	
-	About:				Many people have problems compiling the HandMade Hero Tutorials in 
-						Visual Studio Community 2015, so im creating a repository to work with just that. 
+	About:			Many people have problems compiling the HandMade Hero Tutorials in 
+				Visual Studio Community 2015, so im creating a repository to work with just that. 
 						
-						The source code is also extra commented to clarify what's happening.
-						Personally I prefer the variable name conventions based on MSDN instead of the 
-						altered ones Casey uses in the original examples.
+				The source code is also extra commented to clarify what's happening.
+				Personally I prefer the variable name conventions based on MSDN instead of the 
+				altered ones Casey uses in the original examples.
 						
-						In addition, the formatting of the source code differences according to my own style.
+				In addition, the formatting of the source code differences according to my own style.
 
 
-	NOTE:				For questions about this please use PM on Github: https://github.com/mieleke, 
-						and do not ask Casey Muratori questions about this source code, as he is busy 
-						enough with this project.
+	NOTE:			For questions about this please use PM on Github: https://github.com/mieleke, 
+				and do not ask Casey Muratori questions about this source code, as he is busy 
+				enough with this project.
 */
 
 #include <windows.h>
@@ -41,34 +41,34 @@
 
 	WindowProc is a placeholder for the application-defined function name.
 	
-	SYNTAX:			LRESULT CALLBACK WindowProc	(	_In_ HWND   hwnd,
-													_In_ UINT   uMsg,
-													_In_ WPARAM wParam,
-													_In_ LPARAM lParam	);
+	SYNTAX:		LRESULT CALLBACK WindowProc	(	_In_ HWND   hwnd,
+								_In_ UINT   uMsg,
+								_In_ WPARAM wParam,
+								_In_ LPARAM lParam	);
 
 	RETURN VALUE:	LRESULT
 
 	The return value is the result of the message processing and depends on the message sent.
 */
 
-LRESULT CALLBACK WindowProc (	HWND hwnd,									// Handle to window https://msdn.microsoft.com/en-us/library/Aa979055(v=VS.71).aspx
-								UINT uMsg,									// System-Defined Messages https://msdn.microsoft.com/en-us/library/windows/desktop/ms644927(v=vs.85).aspx
-																			// (we use WM category only) https://msdn.microsoft.com/en-us/library/windows/desktop/ff468921(v=vs.85).aspx
-								WPARAM wParam,								// Additional message information - depends on the value of the uMsg
-								LPARAM lParam)								// Additional message information - depends on the value of the uMsg
+LRESULT CALLBACK WindowProc (	HWND hwnd,				// Handle to window https://msdn.microsoft.com/en-us/library/Aa979055(v=VS.71).aspx
+				UINT uMsg,				// System-Defined Messages https://msdn.microsoft.com/en-us/library/windows/desktop/ms644927(v=vs.85).aspx
+									// (we use WM category only) https://msdn.microsoft.com/en-us/library/windows/desktop/ff468921(v=vs.85).aspx
+				WPARAM wParam,				// Additional message information - depends on the value of the uMsg
+				LPARAM lParam)				// Additional message information - depends on the value of the uMsg
 {
-	LRESULT Result = 0;														// WindowProc Return Value
-	switch (uMsg)															// <-- WindowProc.uMsg (System-Defined Messages)
-	{																		// Catch all the Messages we want to and do something with it via Switch
+	LRESULT Result = 0;						// WindowProc Return Value
+	switch (uMsg)							// <-- WindowProc.uMsg (System-Defined Messages)
+	{								// Catch all the Messages we want to and do something with it via Switch
 		case WM_SIZE: {  } break;				
 		case WM_DESTROY: {  } break;			
 		case WM_CLOSE: {  } break;				
 		case WM_ACTIVATEAPP: {  } break;		
 		case WM_HELP: {  } break;				
 		
-		default:															// If its not in the above list then let Windows Handle all uncaught uMsg
+		default:						// If its not in the above list then let Windows Handle all uncaught uMsg
 		{										
-		Result = DefWindowProc(hwnd, uMsg, wParam, lParam); 				// DefWindowProc function - MSDN: https://msdn.microsoft.com/en-us/library/windows/desktop/ms633572(v=vs.85).aspx
+		Result = DefWindowProc(hwnd, uMsg, wParam, lParam); 	// DefWindowProc function - MSDN: https://msdn.microsoft.com/en-us/library/windows/desktop/ms633572(v=vs.85).aspx
 		} break;
 	
 	} 
@@ -83,9 +83,9 @@ LRESULT CALLBACK WindowProc (	HWND hwnd,									// Handle to window https://msd
 	WinMain is the conventional name used for the application entry point. 
 
 	SYNTAX:			int CALLBACK WinMain	(	_In_ HINSTANCE hInstance,
-												_In_ HINSTANCE hPrevInstance,
-												_In_ LPSTR     lpCmdLine,
-												_In_ int       nCmdShow	);
+								_In_ HINSTANCE hPrevInstance,
+								_In_ LPSTR     lpCmdLine,
+								_In_ int       nCmdShow	);
 
 	RETURN VALUE:	int
 	
@@ -120,11 +120,11 @@ int CALLBACK WinMain
 												LPCTSTR   lpszClassName;
 											} WNDCLASS, *PWNDCLASS;
 */
-	WNDCLASS WindowClass = {};												// Create WindowClass From WNDCLASS
-	WindowClass.style = CS_OWNDC|CS_HREDRAW|CS_VREDRAW;						// Window Class Styles https://msdn.microsoft.com/en-us/library/windows/desktop/ff729176(v=vs.85).aspx
-	WindowClass.lpfnWndProc = WindowProc;									// WindowProc callback function https://msdn.microsoft.com/en-us/library/windows/desktop/ms633573(v=vs.85).aspx
-	WindowClass.hInstance = hInstance;										// A handle to the instance that contains the window procedure for the class.
-	WindowClass.lpszClassName = L"OurWindowClass";							// Class Name to pass ro RegisterClass
+	WNDCLASS WindowClass = {};							// Create WindowClass From WNDCLASS
+	WindowClass.style = CS_OWNDC|CS_HREDRAW|CS_VREDRAW;				// Window Class Styles https://msdn.microsoft.com/en-us/library/windows/desktop/ff729176(v=vs.85).aspx
+	WindowClass.lpfnWndProc = WindowProc;						// WindowProc callback function https://msdn.microsoft.com/en-us/library/windows/desktop/ms633573(v=vs.85).aspx
+	WindowClass.hInstance = hInstance;						// A handle to the instance that contains the window procedure for the class.
+	WindowClass.lpszClassName = L"OurWindowClass";					// Class Name to pass ro RegisterClass
 
 /*
 	RegisterClass function - https://msdn.microsoft.com/en-us/library/windows/desktop/ms633586(v=vs.85).aspx
@@ -148,7 +148,7 @@ int CALLBACK WinMain
 
 	If the function fails, the return value is zero. To get extended error information, call GetLastError.
 */
-	RegisterClass(&WindowClass);											// Register our WindowClass
+	RegisterClass(&WindowClass);							// Register our WindowClass
 
 /*
 	CreateWindowEx function - https://msdn.microsoft.com/en-us/library/windows/desktop/ms632680(v=vs.85).aspx
