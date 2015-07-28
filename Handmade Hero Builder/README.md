@@ -1,6 +1,8 @@
-NOT FINISHED HandMade Hero Multi Platform Auto Builder
+NOT FINISHED
 =========================================
-NOT FINISHED The complete build solution for the current platforms:
+NOT FINISHED 
+
+The complete build solution for the current platforms:
 
 * Windows Visual Studio 2015
 * Linux GNU Compiler
