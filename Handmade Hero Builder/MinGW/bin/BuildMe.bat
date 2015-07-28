@@ -1,0 +1,1 @@
+gcc.exe -o nc.exe -DNDEBUG -DWIN32 -D_CONSOLE -DTELNET -DGAPING_SECURITY_HOLE getopt.c doexec.c netcat.c -O0 -g -lkernel32 -luser32 -lwsock32
