@@ -10,9 +10,10 @@ In addition, the formatting of the source code differences according to my own s
 
 Contents
 ------------------------------
-* /src - Contains all the source code files
 * /binaries - Contains a compiled executable, in case you just want to run the file
+* /src - Contains all the source code files
 * /vs2015 - Contains an export which should compile on any Visual Studio 2015
+* ReadMe.MD - Description of things added, and a link to the video
 
 Requirements
 ------------------------------
