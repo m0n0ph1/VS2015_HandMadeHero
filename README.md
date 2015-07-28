@@ -8,6 +8,16 @@ The source code is also extra commented to clarify what's happening. Personally 
 
 In addition, the formatting of the source code differences according to my own style.
 
+Contents
+------------------------------
+* /src - Contains all the source code files
+* /binaries - Contains a compiled executable, in case you just want to run the file
+* /vs2015 - Contains an export which should compile on any Visual Studio 2015
+
+Requirements
+------------------------------
+* [Visual Studio Community 2015] (https://www.visualstudio.com/)
+
 Questions
 ------------------------------
 For questions about this please use [Github](https://github.com/mieleke)
