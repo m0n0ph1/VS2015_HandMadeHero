@@ -31,7 +31,7 @@ CLS
 :::                                                                       
 for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo(%%A
 ECHO.
-ECHO         1)  Build For Visual Studio 2015
+ECHO         1)  Visual Studio 2015
 ECHO         2)  Linux GNU Compiler
 ECHO         3)  Linux Winelib
 ECHO         4)  OS X port
